@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+img, video{
+    vertical-align: top;
+}
+html{
+    font-family: 'Pretendard';
+}
+
+.top_banner{
+    background-color: #33afe9;
+    padding: 8px 0;
+}
+.top_banner ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top_banner ul li{
+    display: none;
+}
+.top_banner ul .li_m{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.top_banner ul .li_m img{
+    width: 16px;
+}
+
+header{
+    padding: 15px;
+    border-bottom: 1px solid #f3f3f3;
+    position: relative;
+    z-index: 9999;
+}
+header .wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header .wrap h1{
+    order: 1;
+}
+header .wrap h1 img{
+    width: 85px;
+    height: auto;
+}
+header .wrap form{
+    order: 4;
+    width: 100%;
+    margin-top: 15px;
+}
+header .wrap form input{
+    background-color: #f4f4f4;
+    color: #707171;
+    font-size: 15px;
+    font-weight: 400;
+    height: 35px;
+    width: calc(100% - 20px);
+    border: none;
+    border-radius: 200px;
+    padding-left: 20px;
+}
+header .wrap .util{
+    order: 2;
+    margin-left: auto;
+}
+header .wrap .util ul{
+    display: flex;
+}
+header .wrap .util ul li{
+    font-weight: 500;
+    margin-right: 10px;
+    font-size: 14px;
+}
+header .wrap .nav_button{
+    order: 3;
+    width: 30px;
+    height: 30px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+header .wrap .nav_button span{
+    display: block;
+    width: 12px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+    background-color: #000;
+    border-radius: 200px;
+}
+header .wrap .nav_button span:last-child{
+    margin-bottom: 0;
+}
+header .wrap nav.nav-open{
+    right: -100%;
+}
+header .wrap nav.sub-open{
+    right: 0;
+}
+header .wrap nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -200%;
+    transition-duration: 0.4s;
+}
+header .wrap nav .nav_bg{
+    display: none;
+}
+header .wrap nav .main_gnb_wrapper{
+    display: block;
+    z-index: 999;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    overflow-y: scroll;
+    padding: 40px 80px;
+    box-sizing: border-box;
+}
+header .wrap nav .main_gnb_wrapper button{
+    width: 30px;
+    height: 30px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    margin-bottom: 25px;
+    margin-left: auto;
+    display: block;
+    /* top: 80px; */
+    /* right: calc(50% + 70px); */
+    z-index: 9999;
+}
+header .wrap nav .main_gnb_wrapper button span{
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+header .wrap nav .main_gnb_wrapper button span:first-child{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+header .wrap nav .main_gnb_wrapper button span:last-child{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+header .wrap nav .main_gnb_wrapper .main_gnb{
+    display: flex;
+    flex-direction: column;
+}
+header .wrap nav .main_gnb_wrapper .main_gnb li{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+header .wrap nav .main_gnb_wrapper .main_gnb li:last-child{
+    margin-bottom: 0;
+}
+header .wrap nav .main_gnb_wrapper .main_gnb li a{
+    display: block;
+}
+header .wrap nav .main_gnb_wrapper .main_gnb li a::after{
+    content:'';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+header .wrap nav .sub_gnb_wrapper{
+    display: block;
+    z-index: 9999;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+header .wrap nav .sub_gnb_wrapper button{
+    border: 0;
+    font-size: 18px;
+    color: #757575;
+    width: 60px;
+    position: relative;
+    text-align: right;
+    background-color: inherit;
+    margin-left: 80px;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+header .wrap nav .sub_gnb_wrapper button::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    top:4px;
+    left: 0;
+}
+header .wrap nav .sub_gnb_wrapper .sub_box_wrap{
+    position: relative;
+    width: 100%;
+    hegith: 100vh;
+}
+header .wrap nav .sub_gnb_wrapper .sub_box_wrap .sub_box{
+    display: block;
+    position: absolute;
+    padding-left: 80px;
+    padding-bottom: 60px;
+}
+header .wrap nav .sub_gnb_wrapper .sub_box_wrap .sub_box li{
+    font-size: 20px;
+    margin-bottom: 13px;
+    margin-left: 10px;
+}
+header .wrap nav .sub_gnb_wrapper .sub_box_wrap .sub_box li:last-child{
+    margin-bottom: 0;
+}
+header .wrap nav .sub_gnb_wrapper .sub_box_wrap .sub_box .tit{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-left: 0;
+}
+
+.main_banner{
+    padding: 15px;
+    padding-bottom: 40px;
+    position: relative;
+}
+.main_banner .category_wrap{
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+}
+.main_banner .category_wrap .category{
+    width: max-content;
+    display: flex;
+}
+.main_banner .category_wrap .category li{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 7px 15px;
+    border-radius: 200px;
+}
+.main_banner .category_wrap .category li.on{
+    background-color: #3bace2;
+    color: #fff;
+}
+
+.main_banner .category_wrap .category li:last-child{
+    margin-right: 0;
+}
+
+.main_banner .img_pc{
+    display: none;
+}
+.main_banner .img_m{
+    width: 100%;
+    height: auto;
+}
+.main_banner .swiper{
+    display: none;
+}
+.main_banner .swiper1{
+    display: block;
+}
+.main_banner .swiper .swiper-pagination{
+    position: absolute;
+    bottom: 0;
+}
