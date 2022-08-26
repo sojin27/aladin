@@ -1,0 +1,54 @@
+@media all and (min-width: 680px){
+
+    .row4 .row4-swiper-pagination{
+        display: none;
+    }
+    .row4 .row4-swiper-button-next{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/arrow_right.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: -25px;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    .row4 .row4-swiper-button-prev{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/arrow_left_.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: -25px;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    .row4 .swiper_whole_wrap{
+        padding-bottom: unset;
+    }
+    
+    .row5 .banner_wrap .bn1 .text_box{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .row5 .banner_wrap .bn1 .text_box .text2 span{
+        font-size: 23px;
+    }
+    .row5 .banner_wrap>div button{
+        font-size: 26px;
+        padding: 15px 27px;
+    }
+    .row6 .library_wrap .row6_1_swiper .swiper-slide a .text_box .text3{
+        -webkit-line-clamp: 9;
+    }
+}
